@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巴別塔：二十種語言環遊世界 - 互動展覽</title>
+    <style>
+        :root {
+            --primary-color: #333;
+            --bg-color: #f4f4f4;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 { margin-bottom: 10px; }
+        .subtitle { color: #666; font-size: 1.1em; }
+
+        /* 大方框網格佈局 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 方框樣式 */
+        .card {
+            background: var(--card-bg);
+            border: 2px solid var(--primary-color);
+            padding: 25px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            background: var(--primary-color);
+            color: #fff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.5em;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .card:hover h2 { border-bottom-color: #fff; }
+
+        .card p {
+            margin: 0;
+            font-size: 0.95em;
+            flex-grow: 1;
+        }
+
+        .chapter-num {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>巴別塔：二十種語言環遊世界</h1>
+    <p class="subtitle">點擊下方方框，進入各語言的互動遊戲體驗</p>
+</header>
+
+<div class="grid-container">
+    <a href="https://你的帳號.github.io/ch3-spanish/" class="card">
+        <div>
+            <span class="chapter-num">Chapter 03</span>
+            <h2>西班牙語</h2>
+            <p>【¿Ser o Estar?】<br>挑戰西語最經典的動詞選擇題，測驗你的直覺反應！</p>
+        </div>
+    </a>
+
+    <a href="https://你的帳號.github.io/ch4-hindi-urdu/" class="card">
+        <div>
+            <span class="chapter-num">Chapter 04</span>
+            <h2>印地語-烏爾都語</h2>
+            <p>【兄弟鬩牆】<br>體驗聽覺與視覺分裂的「一語兩體」配對挑戰。</p>
+        </div>
+    </a>
+
+    <a href="https://你的帳號.github.io/ch5-arabic/" class="card">
+        <div>
+            <span class="chapter-num">Chapter 05</span>
+            <h2>阿拉伯語</h2>
+            <p>【詞根書籤】<br>從詞根開始，如何「插」出詞彙。</p>
+        </div>
+    </a>
+
+    <a href="#" class="card">
+        <div>
+            <span class="chapter-num">Chapter 06</span>
+            <h2>孟加拉語</h2>
+            <p>【字母IKEA】<br>組裝元音附標文字（Abugida），了解南亞書寫系統的運作。</p>
+        </div>
+    </a>
+
+    <a href="#" class="card">
+        <div>
+            <span class="chapter-num">Chapter 08</span>
+            <h2>俄語</h2>
+            <p>【名詞變形金剛】<br>觀察字尾的奇妙變化，掌握屈折語的語法邏輯。</p>
+        </div>
+    </a>
+
+    <a href="#" class="card">
+        <div>
+            <span class="chapter-num">Chapter 09</span>
+            <h2>馬來語</h2>
+            <p>【複數影印機】<br>感受世界最簡潔語法：想要變複數？重複一次就對了！</p>
+        </div>
+    </a>
+
+    <a href="#" class="card">
+        <div>
+            <span class="chapter-num">Chapter 10</span>
+            <h2>法語</h2>
+            <p>【嗶！嗶！語言警察】<br>保衛法語純潔！找出隱藏在句子中的英語外來詞。</p>
+        </div>
+    </a>
+
+    <a href="#" class="card">
+        <div>
+            <span class="chapter-num">Chapter 11</span>
+            <h2>德語</h2>
+            <p>【異類！】<br>在眾多歐洲語言中，找出那個特立獨行的德文單字。</p>
+        </div>
+    </a>
+
+    <a href="#" class="card">
+        <div>
+            <span class="chapter-num">Chapter 16</span>
+            <h2>爪哇語</h2>
+            <p>【Unggah-ungguh】<br>滑動地位滑桿，看同一個句子如何因說話對象而劇烈改變。</p>
+        </div>
+    </a>
+
+    <a href="#" class="card">
+        <div>
+            <span class="chapter-num">Chapter 17</span>
+            <h2>土耳其語</h2>
+            <p>【樂高組詞】<br>利用後綴與元音和諧規則，拼湊出長如火車的動詞。</p>
+        </div>
+    </a>
+
+    <a href="#" class="card">
+        <div>
+            <span class="chapter-num">Chapter 20</span>
+            <h2>越南語</h2>
+            <p>【聲調登山】<br>選對聲調，幫你的登山者登頂。一步錯，就滑下山！</p>
+        </div>
+    </a>
+</div>
+
+<footer>
+    <p>114學年度創意閱讀競賽作品 | 基於 Gaston Dorren 《Babel》製作</p>
+</footer>
+
+</body>
+</html>
